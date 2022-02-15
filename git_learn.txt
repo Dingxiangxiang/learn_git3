@@ -1,0 +1,12 @@
+1，本地拉取远程代码：
+git clone https://github.com/Dingxiangxiang/learn_git3.git  
+会自己建立learn_git3的文件夹仓库，不需要手动建立文件夹
+如果报错： OpenSSL SSL_read: Connection was reset, errno 10054
+说明网络链接不畅(需要重试)或者 ssl 证书验证方面的问题，执行
+git config --global https.sslVerify "false"   https 证书取消验证
+
+2，删除文件
+git rm test4.txt
+git commit -m "rm test4.txt"
+git push -u origin master
+
